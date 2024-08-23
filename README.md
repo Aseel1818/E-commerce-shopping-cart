@@ -24,7 +24,7 @@ Check out the live demo of the project: [https://drive.google.com/file/d/1t0x2q6
 
 ## 📸 Screenshots
 
-![Shopping Cart Screenshot](path-to-screenshot1.png)
+![Shopping Cart Screenshot](ScreenShots/screen shot1.png)
 ![Payment Section Screenshot](path-to-screenshot2.png)
 
 ## 🛠️ Technologies Used
