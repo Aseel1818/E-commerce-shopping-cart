@@ -27,7 +27,7 @@ Check out the live demo of the project: [Live Demo](https://drive.google.com/fil
 <img src="./ScreenShots/screen%20shot1.png" alt="Shopping Cart Screenshot" style="width: 600px;"/>
 <img src="./ScreenShots/screen%20shot2.png" alt="Shopping Cart Screenshot" style="width: 600px;"/>
 <img src="./ScreenShots/screen%20shot3.png" alt="Shopping Cart Screenshot" style="width: 600px;"/>
-<img src="./ScreenShots/screen%20shot4.png" alt="Shopping Cart Screenshot" style="width: 600px; height: 450px;"/>
+<img src="./ScreenShots/screen%20shot4.png" alt="Shopping Cart Screenshot" style="width: 600px; height: 299px;"/>
 
 
 ## 🛠️ Technologies Used
