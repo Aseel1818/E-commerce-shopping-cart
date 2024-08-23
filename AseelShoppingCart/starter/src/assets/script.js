@@ -100,6 +100,7 @@ function emptyCart() {
   }
 }
 
+/* a function to pay and check the remaining balance and return */
 function pay(amount) {
   totalPaid += amount;
   let totalPrice = cartTotal();
