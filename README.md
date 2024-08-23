@@ -40,7 +40,7 @@ Check out the live demo of the project: [Live Demo](https://drive.google.com/fil
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/makeup-shop-cart.git](https://github.com/Aseel1818/E-commerce-shopping-cart.git
+    git clone https://github.com/Aseel1818/E-commerce-shopping-cart.git
     ```
 
 2. Navigate to the project directory:
