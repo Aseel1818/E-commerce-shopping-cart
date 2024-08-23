@@ -20,14 +20,14 @@ Welcome to the Makeup Shop Shopping Cart project! This page provides a dynamic a
 
 ## 💻 Demo
 
-Check out the live demo of the project: [https://drive.google.com/file/d/1t0x2q6EEC0b3xXhbSO8mKeFYV7OZsvJg/view?usp=sharing](#)
+Check out the live demo of the project: [Live Demo](https://drive.google.com/file/d/1t0x2q6EEC0b3xXhbSO8mKeFYV7OZsvJg/view?usp=sharing)
 
 ## 📸 Screenshots
 
 <img src="./ScreenShots/screen%20shot1.png" alt="Shopping Cart Screenshot" style="width: 600px;"/>
 <img src="./ScreenShots/screen%20shot2.png" alt="Shopping Cart Screenshot" style="width: 600px;"/>
 <img src="./ScreenShots/screen%20shot3.png" alt="Shopping Cart Screenshot" style="width: 600px;"/>
-<img src="./ScreenShots/screen%20shot4.png" alt="Shopping Cart Screenshot" style="width: 600px;"/>
+<img src="./ScreenShots/screen%20shot4.png" alt="Shopping Cart Screenshot" style="width: 600px; height: 400px;"/>
 
 
 ## 🛠️ Technologies Used
