@@ -45,7 +45,7 @@ Check out the live demo of the project: [Live Demo](https://drive.google.com/fil
 
 2. Navigate to the project directory:
     ```bash
-    cd makeup-shop-cart
+    cd AseelShoppingCart
     ```
 
 3. Open `index.html` in your browser to view the project.
