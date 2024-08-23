@@ -20,7 +20,7 @@ Welcome to the Makeup Shop Shopping Cart project! This page provides a dynamic a
 
 ## 💻 Demo
 
-Check out the live demo of the project: [Demo Link](#)
+Check out the live demo of the project: [https://drive.google.com/file/d/1t0x2q6EEC0b3xXhbSO8mKeFYV7OZsvJg/view?usp=sharing](#)
 
 ## 📸 Screenshots
 
