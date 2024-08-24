@@ -7,12 +7,6 @@ let products = [];
 const cart = [];
 let totalPaid = 0;
 
-/* 
-Thank you so much to all the reviewers who have reviewed our projects 
-over the last 4 months. I am grateful.
-please don't consider this comment as a redundant code :) 
-*/
-
 /* creating the objects*/
 const firstProduct = createObject("Blusher", 40, 0, 1, "https://glossier-uk.imgix.net//files/glossier-cloudpaint-puff-1.png?auto=compress,format&cs=srgb&w=1832");
 const secondProduct = createObject("Eye liner", 55, 0, 2, "https://images.beautybay.com/eoaaqxyywn6o/296Foc36HeOZKVIDE13ZXA/eea21d67ad0d89f0cb7d054bf977d082/ANAS0440F_1.jpg");
@@ -36,13 +30,17 @@ function createObject(name, price, quantity, productId, image) {
   }
 }
 
+function getProductByIdFromList(productId, productList) {
+  return productList.find((product) => product.productId === productId);
+}
+
 
 /* a function add the product to the car if it's not exist yet or
  increase its quantity if its already exits.*/
 function addProductToCart(productId) {
   for (let product of products) {
     if (product.productId === productId) {
-      let cartProduct = cart.find(product => product.productId === productId);
+      let cartProduct = getProductByIdFromList(productId, cart);
       if (cartProduct) {
         increaseQuantity(productId);
       } else {
@@ -56,7 +54,7 @@ function addProductToCart(productId) {
 
 /*increase the quantity of a certain product in the cart */
 function increaseQuantity(productId) {
-  let product = products.find(product => product.productId === productId);
+  let product = getProductByIdFromList(productId, products);
   if (product) {
     product.quantity += 1;
   }
@@ -65,7 +63,7 @@ function increaseQuantity(productId) {
 /*decrease the quantity of a certain product in the cart and remove the product 
 //from the cart if quantity is 0 */
 function decreaseQuantity(productId) {
-  let product = products.find(product => product.productId === productId);
+  let product = getProductByIdFromList(productId, products);
   if (product) {
     product.quantity -= 1;
     if (product.quantity === 0) {
@@ -76,7 +74,7 @@ function decreaseQuantity(productId) {
 
 /*remove a product from the cart regardless of its quantity*/
 function removeProductFromCart(productId) {
-  let product = products.find(product => product.productId === productId);
+  let product = getProductByIdFromList(productId, products);;
   if (product.productId === productId) {
     product.quantity = 0;
     cart.splice(cart.indexOf(product), 1);
@@ -95,17 +93,19 @@ function cartTotal() {
 
 /*  a function that empties the products from the cart */
 function emptyCart() {
-  if (cart.length !== 0) {
-    cart.splice(0, cart.length);
+  while (cart.length != 0) {
+    removeProductFromCart(cart[0].productId);
   }
 }
 
-/* a function to pay and check the remaining balance and return */
+
 function pay(amount) {
   totalPaid += amount;
-  let totalPrice = cartTotal();
-  let remaining = totalPaid - totalPrice;
-  totalPaid = 0;
+  let remaining = totalPaid - cartTotal();
+  if (remaining >= 0) {
+    totalPaid = 0;
+    emptyCart();
+  }
   return remaining;
 }
 
